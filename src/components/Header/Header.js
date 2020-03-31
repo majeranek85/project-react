@@ -9,7 +9,7 @@ class Header extends React.Component {
 
   render () {
     return (
-      <header className={styles.componet}>
+      <header className={styles.component}>
         <Container>
           <div className={styles.wrapper}>
             <Link to='/' className={styles.logo}>
