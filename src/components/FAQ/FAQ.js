@@ -1,12 +1,12 @@
 import React from 'react';
 import Container from '../Container/Container';
 import Hero from '../Hero/Hero';
-import {FAQData} from '../../data/dataStore.js';
+import {faqData} from '../../data/dataStore.js';
 
 const FAQ = () => (
   <Container>
-    <Hero titleText={FAQData.title} image={FAQData.image}/>
-    {FAQData.description}
+    <Hero titleText={faqData.title} image={faqData.image}/>
+    <div dangerouslySetInnerHTML={{__html: faqData.description}}></div>
   </Container>
 );
 
