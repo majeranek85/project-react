@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Search.scss';
 import Button from '../Button/Button';
-import PropTypes, { object } from 'prop-types';
+import PropTypes from 'prop-types';
 import { settings } from '../../data/dataStore';
 import Icon from '../Icon/Icon';
 import Container from '../Container/Container';
@@ -14,7 +14,7 @@ class Search extends React.Component {
     changeSearchString: PropTypes.func,
     countVisible: PropTypes.number,
     countAll: PropTypes.number,
-    history: object,
+    history: PropTypes.object,
   }
 
   static defaultProps = {
