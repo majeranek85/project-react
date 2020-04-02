@@ -13,7 +13,7 @@ class SearchResults extends React.Component {
     const {cards} = this.props;
     return (
       <section className={styles.component}>
-        <div className={styles.card}>
+        <div className={styles.cards}>
           {cards.map(cardData => (
             <Card key={cardData.id} {...cardData} />
           ))}
